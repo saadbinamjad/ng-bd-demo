@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, Timestamp } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, Timestamp, UpdateDateColumn } from 'typeorm';
 import { Optional } from '@nestjs/common';
 
 @Entity()
@@ -15,7 +15,7 @@ export class Event {
     @CreateDateColumn({ nullable: true })
     created_at: Timestamp;
 
-    @CreateDateColumn({ nullable: true })
+    @UpdateDateColumn({ nullable: true })
     updated_at: Timestamp;
 
 }
