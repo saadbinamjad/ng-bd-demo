@@ -1,11 +1,16 @@
 import { Controller, Get, Post, Patch, Delete } from '@nestjs/common';
+import { EventsService } from './events.service';
+import { Event } from './entities/event.entity';
 
 @Controller('events')
 export class EventsController {
 
+    constructor(private eventService: EventsService) {
+    }
+
     @Get()
-    index(): string {
-        return 'index';
+    index(): Promise<Event[]> {
+        return this.eventService.findAll();
     }
 
     @Get()
@@ -14,8 +19,8 @@ export class EventsController {
     }
 
     @Post()
-    store(): string {
-        return 'store';
+    store(): Promise<Event> {
+        return this.eventService.create();
     }
 
     @Patch()
