@@ -2,6 +2,8 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
+![Test Pass](https://github.com/Saad-Amjad/ng-bd-demo/workflows/Continuous%20Integration/badge.svg)
+
 ## Description
 
 ng-bd-demo is demo application, that serves as open source API for community based meetups.
