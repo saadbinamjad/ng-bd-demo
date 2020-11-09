@@ -2,7 +2,9 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
+
 ![Test Pass](https://github.com/Saad-Amjad/ng-bd-demo/workflows/Continuous%20Integration/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=saadbinamjad_ng-bd-demo&metric=alert_status)](https://sonarcloud.io/dashboard?id=saadbinamjad_ng-bd-demo)
 
 ## Description
 
