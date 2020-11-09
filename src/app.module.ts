@@ -9,12 +9,12 @@ import { Speaker } from './speakers/entities/speaker.entity';
 
 @Module({
   imports: [SpeakersModule, EventsModule, TypeOrmModule.forRoot({
-    type: 'mysql',
+    type: 'mysql', 
     host: 'localhost',
     port: 3306,
-    username: 'root',
-    password: 'password',
-    database: 'ng-bd-demo',
+    username: 'root', // demo username
+    password: 'password', // demo password
+    database: 'ng-bd-demo', // demo database name
     entities: [Event, Speaker],
     synchronize: true,
   })],
